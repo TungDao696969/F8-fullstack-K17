@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+  </head>
+  <body>
+    <style>
+      .form {
+        width: 50%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      fieldset {
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        background: #e0e0e0;
+        padding: 10px;
+      }
+      fieldset div {
+        display: flex;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      h3 {
+        margin-bottom: -3px;
+        margin-left: 20px;
+      }
+      fieldset > div > label {
+        display: inline-block;
+        width: 120px;
+        margin-bottom: 5px;
+        text-align: right;
+        padding: 0 10px;
+      }
+      input,
+      select,
+      textarea {
+        margin-bottom: 8px;
+        padding: 4px;
+      }
+      .button-group {
+        margin-top: 10px;
+      }
+      textarea {
+        display: block;
+        flex: 1;
+      }
+      .sothich {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .sothich > label {
+        width: 120px; 
+        text-align: right;
+        padding-right: 10px;
+      }
+
+      .sothich-list {
+        display: grid;
+        grid-template-columns: repeat(3, auto); /* 3 checkbox 1 dòng */
+        gap: 5px 20px;
+      }
+    </style>
+    <div class="form">
+      <form action="">
+        <h3>Thông tin cá nhân</h3>
+        <fieldset>
+          <div>
+            <label for="">Tước vị: </label>
+            <select name="" id="">
+              <option value="">Ông</option>
+              <option value="">Bà</option>
+              <option value="">Bố</option>
+              <option value="">Mẹ</option>
+              <option value="">Anh</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Họ và tên: </label>
+            <input type="text" name="" id="" />
+          </div>
+          <div>
+            <label for="">Ngày sinh: </label>
+            <input type="date" name="" id="" />
+          </div>
+          <div>
+            <label for="">Giờ sinh: </label>
+            <input type="time" name="" id="" />
+          </div>
+          <div>
+            <label for="">Giới tính: </label>
+            <input type="radio" name="gioitinh" id="" />Nam
+            <input type="radio" name="gioitinh" id="" />Nữ
+            <input type="radio" name="gioitinh" id="" />Khác
+          </div>
+          <div class="sothich">
+            <label for="">Sở thích: </label>
+            <div class="sothich-list">
+              <label><input type="checkbox" name="sothich" /> Thể thao</label>
+              <label><input type="checkbox" name="sothich" /> Du lịch</label>
+              <label><input type="checkbox" name="sothich" /> Ẩm thực</label>
+              <label><input type="checkbox" name="sothich" /> Âm nhạc</label>
+              <label
+                ><input type="checkbox" name="sothich" /> Học ngoại ngữ</label
+              >
+              <label><input type="checkbox" name="sothich" /> Kinh doanh</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <h3>Thông tin liên hệ</h3>
+        <fieldset>
+          <div>
+            <label for="">Điện thoại: </label>
+            <input type="text" name="" id="" />
+          </div>
+          <div>
+            <label for="">Email: </label>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="ví dụ: billgate@apple.com"
+            />
+          </div>
+          <div>
+            <label for="">Website: </label>
+            <input type="url" name="" id="" />
+          </div>
+          <div>
+            <label for="">Mã tinh: </label>
+            <input type="text" name="" id="" />
+          </div>
+          <div>
+            <label for="">Địa chỉ: </label>
+            <textarea name="" id="" rows="3"></textarea>
+          </div>
+        </fieldset>
+        <h3>Chỉ số sức khỏe</h3>
+        <fieldset>
+          <div>
+            <label for="">Chiều cao: </label>
+            <input type="number" name="" id="" />
+          </div>
+          <div>
+            <label for="">Cân nặng [45kg-100kg]: </label>
+            <input type="range" name="" id="" />
+          </div>
+          <div>
+            <label for="nhiptim">Nhịp tim [60 - 100 nhịp/phút]:</label>
+            <meter id="nhiptim" min="60" max="100" value="75"></meter>
+          </div>
+        </fieldset>
+
+        <h3>Giấy tờ cá nhân</h3>
+        <fieldset>
+          <div>
+            <label for="">Tài liệu: </label>
+            <input type="file" name="" id="" />
+          </div>
+          <div>
+            <label for="">Tải lên 30%: </label>
+            <input type="range" name="" id="" />
+          </div>
+        </fieldset>
+        <div class="button-group">
+          <button type="submit">Gửi</button>
+          <button type="submit">Hủy</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
