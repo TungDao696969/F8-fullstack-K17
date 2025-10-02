@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2, p, label, input {
+    margin: 10px 5px;
+}
+.modal {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+#modal-toggle:checked ~ .modal {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    padding: 0 3px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(0, 0, 255, 0.69);
+    color: white;
+    cursor: pointer;
+}
