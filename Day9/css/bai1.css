@@ -1,0 +1,514 @@
+@import url(https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.logo svg {
+  width: 60px;
+  height: 60px;
+  fill: white;
+  margin-left: 15px;
+}
+
+.title-left {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+.title-left p {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.vikiner {
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.title-left span {
+  text-align: center;
+  line-height: 1.5;
+  font-family: "YourFont";
+  color: white;
+  font-size: 20px;
+}
+
+.switch-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.switch-container input {
+  display: none;
+}
+
+.switch {
+  display: flex;
+  width: 350px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.option {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+#register:checked ~ .switch .slider {
+  left: 50%;
+}
+#login:checked ~ .switch label[for="login"],
+#register:checked ~ .switch label[for="register"] {
+  color: #333;
+}
+
+.content-right {
+  background-color: white;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+  padding: 0 50px;
+  font-family: "Rajdhani", sans-serif;
+}
+.image {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  z-index: 2;
+}
+
+.content-right h2 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content-right input {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  border: 0.5px solid gray;
+  opacity: 0.5;
+  color: gray;
+}
+
+.suppost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.suppost label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #2e2e4d;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.suppost input {
+  width: 18px;
+}
+.suppost input[type="checkbox"] {
+  display: none;
+}
+.suppost a {
+  text-decoration: none;
+  color: gray;
+  font-size: 15px;
+}
+.suppost a:hover {
+  color: red;
+}
+.suppost span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  gap: 8px;
+}
+
+.suppost span::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 0.3px solid black;
+  border-radius: 5px;
+  opacity: 0.3;
+}
+
+.suppost span::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 5px;
+  border: 5px solid rgba(255, 0, 0, 0.721);
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.suppost input:checked + span::after {
+  opacity: 1;
+}
+
+.suppost input:checked + span::before {
+  background: aqua;
+}
+
+.btn-submit {
+  padding: 20px;
+}
+
+.btn-submit button {
+  width: 250px;
+  height: 40px;
+  background: #5753e4;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-submit button:hover {
+  background-color: #1877f2;
+}
+
+.title-right p {
+  text-align: center;
+  font-weight: 600;
+}
+.icon-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.icon-box i {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.fa-square-facebook {
+  background-color: #1877f2;
+}
+
+.fa-twitter {
+  background-color: #1da1f2;
+}
+
+.fa-google {
+  background-color: #9146ff;
+}
+
+.fa-youtube {
+  background-color: #ff0000;
+}
+
+/* Hiệu ứng hover */
+.icon-box i:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1364.98px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 100px;
+  }
+
+  .title-left span {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+
+  .switch-container {
+    margin-top: -50px;
+  }
+
+  .content-right {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 599.98px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 100px;
+  }
+
+  .title-left span {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+
+  .switch-container {
+    margin-top: -50px;
+  }
+
+  .content-right {
+    margin-bottom: 100px;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 499.98px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content-left {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .logo svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-left p {
+    font-size: 22px;
+  }
+  
+
+  .vikiner {
+    font-size: 45px;
+  }
+
+  .switch-container {
+    padding: 20px 0;
+  }
+
+  .switch {
+    width: 250px;
+    height: 45px;
+  }
+
+  .option {
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .content-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+  }
+
+  .content-right h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .content-right input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .btn-submit button {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .icon-box {
+    gap: 10px;
+  }
+
+  .icon-box i {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .suppost {
+    display: flex;
+    gap: 10px;
+  }
+
+  .suppost a {
+    font-size: 14px;
+  }
+
+  .title-right-register {
+    margin: 0 auto;
+  }
+  .title-right {
+    margin: auto;
+  }
+}
+
+/* Register */
+
+.title-right-register {
+  width: 300px;
+}
+
+.title-right-register p {
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+.title-right-register .btn-submit button {
+  background-color: aqua;
+  height: 50px;
+}
+
+.title-right-register .btn-submit button:hover {
+  background: blue;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box label {
+    position: absolute;
+    left: 12px;
+    top:  50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0 4px;
+    color: #888;
+    font-size: 13px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: aqua
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -2px;
+    font-size: 12px;
+}
