@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+</head>
+<body class="bg-purple-500 flex items-center justify-center p-10">
+    <div class="bg-[#1F1F35] w-[400px] rounded-sm p-5">
+       <div class="list m-auto text-center p-10">
+         <h1 class="text-white text-3xl font-semibold mb-6">Get Things Done !</h1>
+        <form>
+            <div class="flex">
+                <input class="text-white bg-[#141428] p-2 border border-purple-400 rounded-l outline-none" type="text" placeholder="What is the task today">
+                <button class="btn bg-purple-400 text-white p-2 hover:bg-purple-700 cursor-pointer border border-purple-400">Add task</button>
+            </div>
+        </form>
+        <span class="error text-red-500"></span>
+        <div class="taskContainer mt-6"></div>
+       </div>
+    </div>
+    <script src="./ex01.js"></script>
+</body>
+</html>
