@@ -1,0 +1,70 @@
+#my-slideshow {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  color: gray;
+  font-size: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.btn-left {
+  left: 2%;
+}
+.btn-right {
+  right: 2%;
+}
+.btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.index-item {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+}
+.list-item {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.list-item.active {
+  opacity: 1;
+  background: orange;
+}
