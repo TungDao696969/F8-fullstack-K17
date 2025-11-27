@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    li {
+      margin: 10px 0;
+      padding: 5px;
+      /* position: relative; */
+    }
+    li.active {
+      border: 1px dotted red;
+    }
+    .up {
+      color: green;
+      cursor: pointer;
+    }
+    .down {
+      color: red;
+      cursor: pointer;
+    }
+    .btn-active {
+      position: absolute;
+      background: gray;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100px;
+      padding: 5px 10px;
+      gap: 3px;
+      z-index: 999;
+      display: none;
+    }
+    button {
+      border: none;
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+    }
+    .btn-active button:hover {
+      color: red;
+    }
+    .model {
+      background-color: rgba(128, 128, 128, 0.574);
+      width: 230px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      position: fixed;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      box-shadow: 0 0 1px;
+    }
+    .model input {
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .model button {
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 4px;
+      border-radius: 5px;
+    }
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(128, 128, 128, 0.623);
+      display: flex;
+      justify-content: center;
+      z-index: 9999;
+      display: none;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>
+        Item 1
+        <span class="up">Up</span>
+        <span class="down">Down</span>
+      </li>
+      <li>
+        Item 2
+        <span class="up">Up</span>
+        <span class="down">Down</span>
+      </li>
+      <li>
+        Item 3
+        <span class="up">Up</span>
+        <span class="down">Down</span>
+      </li>
+      <li>
+        Item 4
+        <span class="up">Up</span>
+        <span class="down">Down</span>
+      </li>
+      <li>
+        Item 5
+        <span class="up">Up</span>
+        <span class="down">Down</span>
+      </li>
+    </ul>
+    <div class="btn-active">
+      <button class="btn-edit">Đổi tên</button>
+      <button class="btn-delete">Xóa</button>
+    </div>
+    <div class="overlay">
+      <div class="model">
+        <input type="text" name="" id="" />
+        <button class="btn-save">Lưu</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
