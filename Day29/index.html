@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      .btn-active {
+        @apply bg-yellow-400;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="max-w-[80%] mx-auto py-3">
+      <h1 class="text-3xl font-bold text-center">Blogs</h1>
+      <input
+        type="search"
+        placeholder="Search..."
+        class="js-search border border-gray-300 w-full py-2 px-3 outline-none my-3"
+      />
+      <button
+        class="add-blog cursor-pointer border border-gray-300 py-2 px-5 hover:bg-green-600"
+      >
+        Thêm mới
+      </button>
+      <div class="js-sort flex gap-3 mt-3">
+        <button
+          data-sort="desc"
+          class="btn-active cursor-pointer border border-gray-300 py-2 px-5"
+        >
+          Mới nhất
+        </button>
+        <button
+          data-sort="asc"
+          class="cursor-pointer border border-gray-300 py-2 px-5"
+        >
+          Cũ nhất
+        </button>
+      </div>
+      <div class="js-loading"></div>
+      <div class="js-post-list"></div>
+      <div class="js-paginate"></div>
+
+      <!-- Modal -->
+      <div
+        class="overlay fixed inset-0 bg-gray-400 opacity-55 z-10 hidden"
+      ></div>
+      <div
+        class="close fixed top-5 left-3 z-50 bg-red-600 w-10 aspect-square flex justify-center items-center text-white rounded-full cursor-pointer hover:bg-blue-500"
+      >
+        <i class="fa-solid fa-xmark text-3xl"></i>
+      </div>
+      <div
+        class="modal fixed top-[300px] w-[80%] rounded-sm p-5 bg-white z-20 left-1/2 -translate-x-1/2 text-left hidden"
+      >
+        <div class="modal-title text-center font-bold"></div>
+        <hr class="border-t-gray-300" />
+        <div class="modal-body pt-2 text-xl"></div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
