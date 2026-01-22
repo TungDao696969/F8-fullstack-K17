@@ -1,0 +1,283 @@
+{
+  "deals": [
+    {
+      "id": 1,
+      "title": "Chef Burgers London",
+      "category": "Pizza & Fast food",
+      "discount": 40,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+    },
+    {
+      "id": 2,
+      "title": "Grand Ai Cafe London",
+      "category": "Vegan",
+      "discount": 20,
+      "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+    },
+    {
+      "id": 3,
+      "title": "Butterbrot Café London",
+      "category": "Pizza & Fast food",
+      "discount": 17,
+      "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d"
+    },
+    {
+      "id": 4,
+      "title": "Tokyo Sushi Bar",
+      "category": "Sushi",
+      "discount": 35,
+      "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351"
+    },
+    {
+      "id": 5,
+      "title": "Green Leaf Vegan",
+      "category": "Vegan",
+      "discount": 25,
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061"
+    },
+    
+    {
+      "id": 7,
+      "title": "Sakura Sushi",
+      "category": "Sushi",
+      "discount": 15,
+      "image": "https://images.unsplash.com/photo-1553621042-f6e147245754"
+    },
+    {
+      "id": 8,
+      "title": "Burger Queen",
+      "category": "Pizza & Fast food",
+      "discount": 22,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+    },
+    {
+      "id": 9,
+      "title": "Healthy Bites",
+      "category": "Vegan",
+      "discount": 18,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+    },
+    {
+      "id": 10,
+      "title": "Ocean Sushi",
+      "category": "Sushi",
+      "discount": 28,
+      "image": "https://images.unsplash.com/photo-1562967916-eb82221dfb36"
+    },
+    {
+      "id": 11,
+      "title": "Street Food Corner",
+      "category": "Others",
+      "discount": 12,
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+    },
+    {
+      "id": 12,
+      "title": "Asian Fusion",
+      "category": "Others",
+      "discount": 20,
+      "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+    }
+  ],
+
+   "categories": [
+    {
+      "id": 1,
+      "name": "Burgers & Fast food",
+      "restaurants": 21,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+    },
+    {
+      "id": 2,
+      "name": "Salads",
+      "restaurants": 32,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+    },
+    {
+      "id": 3,
+      "name": "Pasta & Casuals",
+      "restaurants": 4,
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+    },
+    {
+      "id": 4,
+      "name": "Pizza",
+      "restaurants": 32,
+      "image": "https://pastafrescasaigon.com/wp-content/uploads/2023/05/quan-pizza-ngon-o-dau-an-pizza-loai-nao-ngon-nhat-6-scaled.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Breakfast",
+      "restaurants": 4,
+      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2"
+    },
+    {
+      "id": 6,
+      "name": "Soups",
+      "restaurants": 32,
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd"
+    }
+  ],
+
+  "restaurants": [
+  {
+    "id": 1,
+    "name": "McDonald's London",
+    "logo": "https://logos-world.net/wp-content/uploads/2020/04/McDonalds-Logo-1975-present.png",
+    "bg": "bg-red-600"
+  },
+  {
+    "id": 2,
+    "name": "Papa Johns",
+    "logo": "https://logos-world.net/wp-content/uploads/2022/02/Papa-Johns-Pizza-Emblem.png",
+    "bg": "bg-green-700"
+  },
+  {
+    "id": 3,
+    "name": "KFC West London",
+    "logo": "https://static.vecteezy.com/system/resources/previews/026/783/628/original/kfc-logo-editorial-free-vector.jpg",
+    "bg": "bg-red-500"
+  },
+  {
+    "id": 4,
+    "name": "Texas Chicken",
+    "logo": "https://logotypes101.com/logos/810/4328DA140DC27BC25A6B181996854DAF/texas_chicken_logo.png",
+    "bg": "bg-white"
+  },
+  {
+    "id": 5,
+    "name": "Burger King",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Burger_King_2020.svg",
+    "bg": "bg-orange-400"
+  },
+  {
+    "id": 6,
+    "name": "Shawarma House",
+    "logo": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+    "bg": "bg-yellow-400"
+  }
+],
+
+   "faqs": [
+    {
+      "id": 1,
+      "question": "How does Order.UK work?",
+      "answer": "Order.UK simplifies the food ordering process. Browse menus, select dishes, and checkout easily."
+    },
+    {
+      "id": 2,
+      "question": "What payment methods are accepted?",
+      "answer": "We accept credit cards, debit cards, and cash on delivery."
+    },
+    {
+      "id": 3,
+      "question": "Can I track my order in real-time?",
+      "answer": "Yes, you can track your order live until delivery."
+    },
+    {
+      "id": 4,
+      "question": "Are there any special discounts?",
+      "answer": "We offer seasonal promotions and exclusive deals."
+    },
+    {
+      "id": 5,
+      "question": "Is Order.UK available in my area?",
+      "answer": "Check availability by entering your location."
+    }
+  ],
+
+  "steps": {
+    "faq": [
+      {
+        "id": 1,
+        "title": "Place an Order!",
+        "desc": "Place order through our website or mobile app",
+        "icon": "🍔"
+      },
+      {
+        "id": 2,
+        "title": "Track Progress",
+        "desc": "You can track your order status",
+        "icon": "📍"
+      },
+      {
+        "id": 3,
+        "title": "Get your Order!",
+        "desc": "Receive your food fast",
+        "icon": "📱"
+      }
+    ],
+
+    "about": [
+      {
+        "id": 1,
+        "title": "Who we are?",
+        "desc": "Leading food delivery platform",
+        "icon": "🏢"
+      },
+      {
+        "id": 2,
+        "title": "Our mission",
+        "desc": "Deliver happiness",
+        "icon": "🎯"
+      },
+      {
+        "id": 3,
+        "title": "Our vision",
+        "desc": "Be #1 in food tech",
+        "icon": "🚀"
+      }
+    ],
+
+    "partner": [
+      {
+        "id": 1,
+        "title": "Join us",
+        "desc": "Register your restaurant",
+        "icon": "🤝"
+      },
+      {
+        "id": 2,
+        "title": "Grow business",
+        "desc": "Increase revenue",
+        "icon": "📈"
+      },
+      {
+        "id": 3,
+        "title": "Support",
+        "desc": "24/7 assistance",
+        "icon": "💬"
+      }
+    ],
+
+    "support": [
+      {
+        "id": 1,
+        "title": "Live chat",
+        "desc": "Chat with us",
+        "icon": "💬"
+      },
+      {
+        "id": 2,
+        "title": "Call center",
+        "desc": "Hotline support",
+        "icon": "📞"
+      },
+      {
+        "id": 3,
+        "title": "Email",
+        "desc": "support@order.uk",
+        "icon": "📧"
+      }
+    ]
+  },
+
+  "stats": {
+    "riders": 546,
+    "orders": 789900,
+    "restaurants": 690,
+    "foodItems": 17457
+  }
+
+}
+
