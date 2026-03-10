@@ -57,7 +57,7 @@ const Form = () => {
     }
     setResult(newList);
     setEditIndex(null);
-    setEditValue("");
+    setEditValue("");  
   };
 
   return (

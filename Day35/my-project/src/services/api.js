@@ -1,12 +1,10 @@
-
 const getApiUrl = () => {
   if (import.meta.env.DEV) {
     return "http://localhost:3001";
   }
-  return "http://localhost:3001"; // Will fallback to db.json
+  return "http://localhost:3001";
 };
 
-// Cache for db.json data
 let dbCache = null;
 
 const fetchDbData = async () => {

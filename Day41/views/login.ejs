@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+<div class="bg-white p-8 rounded-xl shadow-md w-80">
+
+    <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+
+  <% if(error){ %>
+    <div class="bg-red-100 border border-red-300 text-red-700 text-sm p-2 rounded mb-4 text-center">
+        <%= error %>
+    </div>
+<% } %>
+
+    <form method="POST" action="/login" class="space-y-4">
+
+       <div>
+    <label class="text-sm font-medium">Email</label>
+
+    <div class="relative">
+        <input 
+            name="email"
+            placeholder="Email..."
+            class="w-full border rounded-lg p-2 pr-8
+            <%= emailError ? 'border-red-500 focus:ring-red-400' : 'border-gray-300 focus:ring-blue-400' %>
+            focus:outline-none focus:ring-2"
+        />
+
+        <% if(emailError){ %>
+            <span class="absolute right-2 top-2 text-red-500">⚠</span>
+        <% } %>
+    </div>
+
+    <% if(emailError){ %>
+        <p class="text-red-500 text-sm mt-1">
+            <%= emailError %>
+        </p>
+    <% } %>
+</div>
+
+
+        <div>
+    <label class="text-sm font-medium">Mật khẩu</label>
+
+    <div class="relative">
+        <input 
+            name="password"
+            type="password"
+            placeholder="Mật khẩu..."
+            class="w-full border rounded-lg p-2 pr-8
+            <%= passwordError ? 'border-red-500 focus:ring-red-400' : 'border-gray-300 focus:ring-blue-400' %>
+            focus:outline-none focus:ring-2"
+        />
+
+        <% if(passwordError){ %>
+            <span class="absolute right-2 top-2 text-red-500">⚠</span>
+        <% } %>
+    </div>
+
+    <% if(passwordError){ %>
+        <p class="text-red-500 text-sm mt-1">
+            <%= passwordError %>
+        </p>
+    <% } %>
+</div>
+
+        <button 
+            class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition"
+        >
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
