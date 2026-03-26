@@ -98,3 +98,7 @@ COMMIT;
 
 ROLLBACK;
 
+--nếu bỏ transaction và hai lệnh UPDATE chạy riêng lẻ thì:
+-- Trừ tiền ví A xong mà server crash trước khi cộng ví B
+-- => Ví A mất tiền, ví B không nhận
+-- => Dữ liệu sai lệch
