@@ -1,0 +1,13 @@
+model User {
+  id         Int       @id @default(autoincrement())
+  email      String    @unique
+  name       String
+  status     Boolean
+  phone      Phone?
+  posts      Post[]
+  products   Product[]
+  created_at DateTime? @db.Timestamptz()
+  updated_at DateTime? @db.Timestamptz()
+
+  @@map("users")
+}
