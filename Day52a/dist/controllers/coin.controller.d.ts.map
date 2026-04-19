@@ -1,0 +1,1 @@
+{"version":3,"file":"coin.controller.d.ts","sourceRoot":"","sources":["../../src/controllers/coin.controller.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAQ5C,eAAO,MAAM,cAAc;iBACN,OAAO,OAAO,QAAQ;mBAgBpB,OAAO,OAAO,QAAQ;iCAuBR,OAAO,OAAO,QAAQ;iCAsBtB,OAAO,OAAO,QAAQ;CAqB1D,CAAC"}
